@@ -16,7 +16,6 @@ class CartScene: UIViewController {
     
     var cartProductList = [CartProducts]()
     var viewModel = CartViewModel()
-    let homePage = HomePage()
     var detail = Details()
     var totalPrice = 0;
     
@@ -116,7 +115,7 @@ extension CartScene : UITableViewDelegate, UITableViewDataSource{
             let cartProduct = self.cartProductList[indexPath.row]
             
             let alert = UIAlertController(title: "Delete", message: "\(cartProduct.yemek_adi!) Will be deleted from cart", preferredStyle: .alert)
-            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+            let cancelAction = UIAlertAction(title: "Cancel", style: .default)
             alert.addAction(cancelAction)
             let deleteAction = UIAlertAction(title: "Yes", style: .destructive){ _ in
                 
