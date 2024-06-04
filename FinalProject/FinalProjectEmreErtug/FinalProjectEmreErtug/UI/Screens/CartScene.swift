@@ -122,7 +122,6 @@ extension CartScene : UITableViewDelegate, UITableViewDataSource{
                 self.viewModel.deleteCartProduct(sepet_yemek_id: cartProduct.sepet_yemek_id!, kullanici_adi:"emre")
                 self.viewModel.loadCartProducts(kullanici_adi: "emre")
                 self.totalPrice = 0
-                self.labelTotalPrice.text = "0"
 
             }
             
